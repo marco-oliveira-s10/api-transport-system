@@ -34,6 +34,16 @@ spring:
       allowed-origins: "*"
       allowed-methods: GET,POST,PUT,DELETE,OPTIONS
       allowed-headers: "*"
+  
+  # SpringDoc
+  springdoc:
+    api-docs:
+      path: /api-docs
+    swagger-ui:
+      path: /swagger-ui.html
+      operationsSorter: method
+      tagsSorter: alpha
+      tryItOutEnabled: true
 
 # Server
 server:
