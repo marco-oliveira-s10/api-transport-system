@@ -1,4 +1,4 @@
-package com.transport.api_transport_system;
+package com.transport.system;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
