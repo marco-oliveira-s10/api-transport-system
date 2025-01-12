@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -28,7 +29,9 @@ import jakarta.validation.Valid;
 @RestController
 @RequestMapping("/api/abastecimentos")
 @Tag(name = "Abastecimento", description = "API para gerenciamento de abastecimentos")
+@CrossOrigin(origins = {"http://localhost:8081", "http://localhost", "http://127.0.0.1:8081"})
 public class AbastecimentoController {
+	
 
 	@Autowired
 	private AbastecimentoService service;
